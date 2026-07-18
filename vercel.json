@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/memes_and_mythology", "destination": "/memes_and_mythology.html" },
+    { "source": "/memes_and_mythology/", "destination": "/memes_and_mythology.html" }
+  ],
+  "cleanUrls": true
+}
