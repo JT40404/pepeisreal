@@ -109,6 +109,21 @@
             border-radius: 16px;
             pointer-events: none;
         }
+        .gif-caption {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: rgba(200, 200, 180, 0.6);
+            text-align: center;
+            margin-top: 12px;
+            line-height: 1.5;
+            max-width: 90%;
+        }
+        .gif-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -131,6 +146,21 @@
         .hero-image-wrapper img:hover {
             transform: scale(1.02);
             box-shadow: 0 0 35px rgba(124,252,0,0.3), 0 0 70px rgba(124,252,0,0.15), 0 15px 50px rgba(0,0,0,0.6);
+        }
+        .hero-image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero-caption {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: rgba(200, 200, 180, 0.6);
+            text-align: center;
+            margin-top: 14px;
+            line-height: 1.5;
+            max-width: 80%;
         }
         .divider {
             display: flex;
@@ -325,11 +355,17 @@
         </div>
         <header class="header-section">
             <div class="gif-row">
-                <div class="gif-wrapper">
-                    <img src="https://i.ibb.co/pBqkFSyY/pepeisrealbanner.gif" alt="Pepe Is Real Banner">
+                <div class="gif-item">
+                    <div class="gif-wrapper">
+                        <img src="https://i.ibb.co/pBqkFSyY/pepeisrealbanner.gif" alt="Pepe Is Real Banner">
+                    </div>
+                    <span class="gif-caption">Real Pepe Sightings</span>
                 </div>
-                <div class="gif-wrapper">
-                    <img src="https://i.ibb.co/ZzPhcf7q/rarestpepetoken.gif" alt="Rarest Pepe Token">
+                <div class="gif-item">
+                    <div class="gif-wrapper">
+                        <img src="https://i.ibb.co/ZzPhcf7q/rarestpepetoken.gif" alt="Rarest Pepe Token">
+                    </div>
+                    <span class="gif-caption">Pepe Sightings Over Time</span>
                 </div>
             </div>
             <h1 class="header-title">Pepe Is Real</h1>
