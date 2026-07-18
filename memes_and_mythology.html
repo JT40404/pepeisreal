@@ -132,6 +132,44 @@
             transform: scale(1.02);
             box-shadow: 0 0 35px rgba(124,252,0,0.3), 0 0 70px rgba(124,252,0,0.15), 0 15px 50px rgba(0,0,0,0.6);
         }
+        .dual-image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 30px 0 40px 0;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        .dual-image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 420px;
+        }
+        .dual-image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            max-height: 320px;
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(124,252,0,0.15), 0 0 50px rgba(124,252,0,0.08), 0 12px 40px rgba(0,0,0,0.5);
+            border: 2px solid rgba(124,252,0,0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .dual-image-wrapper img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 35px rgba(124,252,0,0.3), 0 0 70px rgba(124,252,0,0.15), 0 15px 50px rgba(0,0,0,0.6);
+        }
+        .dual-image-caption {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: rgba(200, 200, 180, 0.6);
+            text-align: center;
+            margin-top: 12px;
+            line-height: 1.5;
+            max-width: 90%;
+        }
         .divider {
             display: flex;
             align-items: center;
@@ -314,7 +352,7 @@
     <div class="particles" id="particles"></div>
     <div class="container">
         <div class="nav-link">
-            <a href="index.html">&larr; Back to Pepe Is Real</a>
+            <a href="/">&larr; Back to Pepe Is Real</a>
         </div>
         <div class="ca-section top-ca">
             <div class="ca-label">Contract Address</div>
@@ -334,8 +372,14 @@
             </div>
             <h1 class="header-title">Memes and Mythology</h1>
         </header>
-        <div class="hero-image-wrapper">
-            <img src="https://i.ibb.co/HfQH5SWb/Chat-GPT-Image-Jul-17-2026-07-33-25-PM.png" alt="Pepe Is Real">
+        <div class="dual-image-row">
+            <div class="dual-image-wrapper">
+                <img src="https://m.media-amazon.com/images/I/71nYwXCjNAL._AC_UF894,1000_QL80_.jpg" alt="Ancient Egyptian god Kek figurine">
+                <span class="dual-image-caption">figurine of the ancient Egyptian god Kek (or his female counterpart, Heket).</span>
+            </div>
+            <div class="dual-image-wrapper">
+                <img src="https://miro.medium.com/v2/resize:fit:1000/0*XWYioN9njFp29w0f" alt="Pepe and Kek mythology">
+            </div>
         </div>
         <div class="divider">
             <div class="divider-line"></div>
